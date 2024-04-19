@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/e5b949233f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cloud Developer and engineer. </p>
+                <h1>Hi, I'm <span>SUDHARSHAN</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------About----------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>I offer seamless IT services to my clients, specializing in cost-effective development and maintenance of web applications. With an expert team, we handle the entire process from design to deployment.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experties')">Experties</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Design</span><br>UI & UX</li>
+                            <li><span>Develop</span><br>HTML, CSS, JS</li>
+                            <li><span>Deploy</span><br>AWS, AZURE, GCP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experties">
+                        <ul>
+                            <li><span>CERTIFIED AWS CLOUD APPLICATION DEVELOPER</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-------------------------SERVICES------------------------------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title change"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>creating the visual elements and layout of a website, while coding involves translating these
+                        designs into a functional website using programming languages
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Transforming vision into reality is at the core of what we do. As UI/UX design specialists, we
+                        excel in crafting immersive digital expe riences that captivate users and drive engagement.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Designing</h2>
+                    <p>At the heart of our services lies the fusion of creativity and functionality. As experts in app
+                        design, we specialize in crafting seamless user experiences that resonate with your audience.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>CLOUD</h2>
+                    <p>At the core of our cloud services is the fusion of creativity and functionality. As app design specialists, we excel in creating seamless user experiences tailored to resonate with your audience.
+                        </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------------PORTFOLIO---------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title  change">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="music" src="WordPress_blue_logo.svg.png">
+                    <div class="layer">
+                        <h3 class="color">Automated deployment process for a WordPress website</h3>
+                        <p>Streamline your WordPress website deployment with our automated process utilizing Nginx as the web server in a LEMP stack. Our solution ensures efficient and reliable deployment, enabling seamless management and scaling of your WordPress site.
+                        </p>
+                        <a href="https://github.com/SudharshanPalabindela/WordPressServer"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="music" src="campercafe.jpg">
+                    <div class="layer">
+                        <h3 class="color">CamperCafe</h3>
+                        <p>The project entails developing and hosting a static website on AWS. Utilizing HTML and CSS, we craft a visually captivating and responsive user interface, ensuring an engaging browsing experience.</p>
+                        <a href="https://github.com/SudharshanPalabindela/CamperCafe" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="music" src="2560px-Amazon_Web_Services_Logo.svg.png">
+                    <div class="layer">
+                        <h3 class="color">Automated-Multi-Tier-Web-Application-Deployment-on-AWS</h3>
+                        <p>Automating the deployment of a multi-tier web application on AWS encompasses establishing a scalable and dependable infrastructure. This involves utilizing AWS Virtual Private Cloud (VPC), Linux-based EC2 instances, Terraform for infrastructure as code, and AWS CloudFormation for efficient management of the application stack.</p>
+                        <a href="https://github.com/SudharshanPalabindela/Automated-Multi-Tier-Web-Application-Deployment-on-AWS-" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------contact--------------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="contact-center">
+                        <p> <i class="fa-solid fa-paper-plane"></i>sudharshan.palabindela@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8184995582</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/sudharshan-palabindela/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="___" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://github.com/SudharshanPalabindela" target="_blank"><i
+                                    class="fa-brands fa-square-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------SKILL SCRIPT-------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <!-------------------------------END SCRIPT---------------------------------->
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxFH-JiE67vA5Cuo5GVSvSkSerj95o99R_FAoT8ll5-TqjsMgHJQLaJ9n0RZ20NkNZ8GA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Sucessfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
